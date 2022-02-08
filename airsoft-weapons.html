@@ -8,6 +8,17 @@
 		type="image/x-icon"
 		href="/images/LNC Logo800 px.png"
 	>
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="styles.css"
+	>
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+		crossorigin="anonymous"
+	>
 	<style>
 		.content-area>img {
 			width: 90%;
@@ -20,35 +31,87 @@
 </head>
 
 <body style="background-color: #bf8d41; margin: 0; ">
-	<div style="
-		position: sticky;
-		top: 0;
-		background-color: #8b6012;
-		padding: 10px 40px;
-		display: flex;
-		justify-content: space-between;
-		">
-		<img
-			style="
-			height: 50px;
-			object-fit: contain;
-			"
-			src="images/LNC Logo800 px.png"
-		>
-		<div style="
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			gap: 10px;
-			">
-			<button onclick="window.location.href='/'">Home</button>
-			<button>Airsoft-Weapons</button>
-			<button onclick="window.location.href='mini-weapons.html'">Mini-Weapons</button>
-			<button>3D-Prints</button>
-			<button>Social-Media</button>
-			<button>About</button>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+			<img
+				style="
+				height: 50px;
+				object-fit: contain;
+				"
+				src="images/LNC Logo800 px.png"
+			>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarNavDropdown"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div
+				class="collapse navbar-collapse"
+				id="navbarNavDropdown"
+			>
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="/"
+						>Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							data-bs-toggle="dropdown"
+							aria-current="page"
+						>
+							Airsoft-Weapons
+						</a>
+						<ul class="dropdown-menu">
+							<li><a
+									class="dropdown-item"
+									href="airsoft-weapons.html"
+								>All</a></li>
+							<li><a
+									class="dropdown-item"
+									href="airsoft-weapons.html#Snipers"
+								>Snipers</a></li>
+							<li><a
+									class="dropdown-item"
+									href="airsoft-weapons.html#Automatic_Rifles"
+								>Automatic Rifles</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="mini-weapons.html"
+						>
+							Mini-Weapons
+						</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="airsoft-weapons.html"
+						>3D-Prints</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="#"
+						>Social-Media</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="#"
+						>About</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
+	</nav>
 	<div
 		class="content-area"
 		style="
@@ -58,8 +121,10 @@
 		align-items: center;
 		"
 	>
+		<h1 id="Snipers">Snipers</h1>
 		<img src="images/mini-weapons/UntitledModel_2.png">
 		Infos zu dieser Waffe und Links?
+		<h1 id="Automatic_Rifles">Automatic Rifles</h1>
 		<img src="images/airsoft-weapons/AirsoftWeaponDemo1.png">
 	</div>
 </body>

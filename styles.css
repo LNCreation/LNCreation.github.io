@@ -1,0 +1,8 @@
+.navbar{
+	background-color: #8b6012;
+}
+@media (min-width: 992px) {
+	.navbar {
+		padding: 0 50px;
+	}
+}
