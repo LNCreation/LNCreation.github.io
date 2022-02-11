@@ -20,7 +20,14 @@
 		crossorigin="anonymous"
 	>
 	<style>
-		.content-area>img {
+		.image-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 300px);
+			gap: 20px;
+			justify-content: center;
+		}
+
+		.image-container>img {
 			width: 300px;
 		}
 	</style>
@@ -82,13 +89,24 @@
 								>Semi-Automatic Rifles</a></li>
 						</ul>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item dropdown">
 						<a
-							class="nav-link active"
-							href="mini-weapons.html"
+							class="nav-link active dropdown-toggle"
+							href=""
+							data-bs-toggle="dropdown"
 						>
 							Mini-Weapons
 						</a>
+						<ul class="dropdown-menu">
+							<li><a
+									class="dropdown-item"
+									href="mini-weapons.html"
+								>All</a></li>
+							<li><a
+									class="dropdown-item"
+									href="mini-weapons.html#CSGO"
+								>CSGO</a></li>
+						</ul>
 					</li>
 					<li class="nav-item">
 						<a
@@ -112,32 +130,30 @@
 			</div>
 		</div>
 	</nav>
-	<div
-		class="content-area"
-		style="
-		margin: 40px;
-		display: grid;
-		grid-template-columns: repeat(auto-fill, 300px);
-		gap: 20px;
-		justify-content: center;
-		"
-	>
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
-		<img src="images/mini-weapons/UntitledModel_2.png">
+	<div class="content-area">
+		<h1><a
+				class="anchor"
+				id="CSGO"
+			></a>CSGO</h1>
+		<div class="image-container">
+			<img src="images/mini-weapons/csgo/CSGO Assault rifles - AUG.png">
+			<img src="images/mini-weapons/csgo/CSGO Assault rifles - Famas.png">
+			<img src="images/mini-weapons/csgo/CSGO Assault rifles - Galil AR.png">
+			<img src="images/mini-weapons/csgo/CSGO Pistols - Tech-9.png">
+			<img src="images/mini-weapons/csgo/CSGO Shotguns - Mag7.png">
+			<img src="images/mini-weapons/csgo/CSGO Shotguns - Nova.png">
+			<img src="images/mini-weapons/csgo/CSGO Shotguns - Sawed Off.png">
+			<img src="images/mini-weapons/csgo/CSGO Shotguns - XM1014.png">
+			<img src="images/mini-weapons/csgo/CSGO SMGs - Mac10.png">
+			<img src="images/mini-weapons/csgo/CSGO SMGs - MP5 SD.png">
+			<img src="images/mini-weapons/csgo/CSGO SMGs - MP7.png">
+			<img src="images/mini-weapons/csgo/CSGO SMGs - MP9.png">
+			<img src="images/mini-weapons/csgo/CSGO SMGs - P90.png">
+			<img src="images/mini-weapons/csgo/CSGO SMGs - PP Bizon.png">
+			<img src="images/mini-weapons/csgo/CSGO SMGs - UMP45.png">
+			<img src="images/mini-weapons/csgo/Miniweapons  (CSGO) Assault Rifle, AK47.png">
+			<img src="images/mini-weapons/csgo/Miniweapons  (CSGO) Assault Rifle, M4A4.png">
+		</div>
 	</div>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

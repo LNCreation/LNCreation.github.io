@@ -6,6 +6,11 @@
 		padding: 0 50px;
 	}
 }
+
+.content-area{
+	margin: 40px;
+}
+
 /* Anker verschieben, damit nicht vom fixed Header verdeckt */
 a.anchor {
 	display: block;
