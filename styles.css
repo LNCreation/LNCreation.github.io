@@ -1,5 +1,11 @@
+html>body{
+	margin: 0;
+	background-color: #C0A165;
+}
+
 .navbar{
-	background-color: #8b6012;
+	background-color: #86693F;
+	box-shadow: 0 3px 5px black;
 }
 @media (min-width: 992px) {
 	.navbar {
