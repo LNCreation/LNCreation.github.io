@@ -1,3 +1,4 @@
+-Legal disclaimer auf webseite, in videos/beschreibung
 -Menüleiste
 	-Airsoft-Weapons, Mini-Weapons
 		-Untermenü Waffengattungen
